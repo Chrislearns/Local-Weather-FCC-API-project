@@ -1,0 +1,46 @@
+.header{
+  text-align:center;
+  color:white;
+  font-size: 10vh;
+}
+
+body{
+  	background-image:  url("http://miriadna.com/desctopwalls/images/max/Heave-clouds-above-the-lake.jpg")
+}
+
+.degrees{
+  color:white;
+  
+  text-align: center;
+}
+.change-temp{
+  display:inline-block;
+ font-size:2em;
+  text-align:center;
+}
+
+.location{
+  color:white;
+  text-align:center;
+font-weight:bold;
+}
+
+.info{
+  color:white;
+  
+  text-align:center;
+}
+
+.newicon{
+  width:80px;
+  height:80px;
+}
+
+.absolute{
+  
+  margin: auto;
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+width: 80%;
+  height: 60%;
+}
