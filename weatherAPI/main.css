@@ -60,9 +60,7 @@ body {
   display: none;
 
 }
-.weather-summary{
-display: block;
-}
+
 .temperature-section {
   display: inline-block;
 }
