@@ -46,6 +46,9 @@ body {
   color: #BFAD61;
   text-shadow: 0 0 0.3em #000;
 }
+.author {
+  color:white;
+}
 .weather-info-div{
   color: black;
 
@@ -85,4 +88,22 @@ display: inline-block;
 }
 .daily-summary{
 color: white;
+}
+a {
+  color: black !important;
+}
+a:link{
+  color: black !important;
+  text-decoration: none !important;
+}
+a:hover{
+    text-decoration: none !important;
+     cursor: pointer;
+     cursor: hand;
+}
+a:active{
+  color: black !important;
+}
+a:visited{
+  color: black !important;
 }

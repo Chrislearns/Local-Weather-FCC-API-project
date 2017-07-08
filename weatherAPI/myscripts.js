@@ -22,8 +22,8 @@ console.log(json);
        let dailySummary = json.daily.summary;
        let celsiusTemp = Math.round((farenheitTemp - 32) / 1.8);
 // Show Coordinates
-          $('.location-section').html("Your current coordinates are: <br>Latitude:"+ position.coords.latitude + "<br>Longitude: " + position.coords.longitude);
-        //
+          $('.location-section').html("Your current local conditions are<br>");
+        
         if(currentIcon === "clear-day"){
           $('#clear-day').show('slow');
         }
