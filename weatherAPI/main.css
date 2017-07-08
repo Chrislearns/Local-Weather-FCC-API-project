@@ -61,7 +61,7 @@ body {
 
 }
 .weather-summary{
-display: inline-block;
+display: block;
 }
 .temperature-section {
   display: inline-block;
