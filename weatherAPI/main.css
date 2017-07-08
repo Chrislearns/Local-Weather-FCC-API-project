@@ -1,46 +1,51 @@
+/* CSS Reset
+Removes browser preset properties
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
 .header{
   text-align:center;
-  color:white;
   font-size: 10vh;
+  color: yellow;
 }
 
 body{
-  	background-image:  url("http://miriadna.com/desctopwalls/images/max/Heave-clouds-above-the-lake.jpg")
+    background-image:  url("images/skyclouds.gif");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-color: black !important;
 }
 
-.degrees{
-  color:white;
-  
-  text-align: center;
+.main-background-image{
+  width: 90%;
+  margin: 50px auto;
 }
-.change-temp{
-  display:inline-block;
- font-size:2em;
-  text-align:center;
-}
-
-.location{
-  color:white;
-  text-align:center;
-font-weight:bold;
-}
-
-.info{
-  color:white;
-  
-  text-align:center;
-}
-
-.newicon{
-  width:80px;
-  height:80px;
-}
-
-.absolute{
-  
-  margin: auto;
-  position: absolute;
-  top: 0; left: 0; bottom: 0; right: 0;
-width: 80%;
-  height: 60%;
+@media (max-width:640px){
+  .main-background-image{
+    width: 100%;
+  }
 }
