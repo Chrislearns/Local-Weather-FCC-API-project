@@ -1,5 +1,17 @@
-//Dark Ski has disabled CORS. Also IP API is not https so it can't be used on codepen. I've completed the project before changes and I hope I can still recieve my Front End Certificate!
+let icons = new Skycons({"color": "black"});
 
+    icons.set(document.getElementById("clear-day"), Skycons.CLEAR_DAY);
+    icons.set(document.getElementById("clear-night"), Skycons.CLEAR_NIGHT);
+    icons.set(document.getElementById("partly-cloudy-day"), Skycons.PARTLY_CLOUDY_DAY);
+    icons.set("partly-cloudy-night", Skycons.PARTLY_CLOUDY_NIGHT);
+    icons.set("cloudy", Skycons.CLOUDY);
+    icons.set("rain", Skycons.RAIN);
+    icons.set("sleet", Skycons.SLEET);
+    icons.set("snow", Skycons.SNOW);
+    icons.set("wind", Skycons.WIND);
+    icons.set("fog", Skycons.FOG);
+
+    icons.play();
 
 $(document).ready(function() {
   navigator.geolocation.getCurrentPosition(function(position) {
@@ -14,22 +26,16 @@ console.log(position);
 
       success: function(json) {
 console.log(json);
-       var descrip = json.currently.apparentTemperature;
-console.log(descrip);
-   $(".info").html((descrip.replace(/\w\S*/g, function(c) {
-          return c.charAt(0).toUpperCase() + c.substr(1).toLowerCase();
-        })) + " " + "<img class = newicon src=" + "http://openweathermap.org/img/w/" + json.weather[0].icon + ".png></img>");
-        $(".location").html(json.name + ", " + json.sys.country);
+       let temp = json.currently.temperature;
+       let location = json.timezone;
+       let dailyIcon = json.currently.icon;
+       let weatherSummary = json.currently.summary;
+       let temperatureMeasurementF = "<img class='farenheit-image' src ='images/farenheit.jpg'></img>";
+       let temperatureMeasurementC = "<img class='farenheit-image' src ='images/celsius.jpg'></img>";
+       let dailySummary = json.daily.summary;
 
-
-    var convertF = "<button class = btn btn-success btn-transparent  change-temp style = color:red>ºF</button>";
-  var convertC = "<button class = btn btn-success btn-transparent  change-temp style = color:red> ºC</button>";
-
-   var degrees = json.main.temp;
-       var farenheit = Math.round(1.8 *(degrees - 273) + 32);
-             var celsius = Math.round((farenheit - 32) / 1.8);
-  $(".degrees").html(farenheit + convertF);
-
+          $('.location-section').html("Your current coordinates are: <br>Latitude:"+ position.coords.latitude + "<br>Longitude: " + position.coords.longitude);
+        //  $('.darksky-icon').html("")
 
 
      }
@@ -37,5 +43,6 @@ console.log(descrip);
 
       });
     });
+
 
   });

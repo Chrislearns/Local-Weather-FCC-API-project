@@ -26,26 +26,49 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
-.header{
-  text-align:center;
-  font-size: 10vh;
-  color: yellow;
+
+body {
+  font-family: 'Lato', sans-serif;
+  text-align: center;
+  font-size: 1em;
+  margin: 0 auto !important;
+  max-width: 680px;
+  background-color: #9DC6D8 !important;
+  background-image: url('images/theimage.jpg');
+       background-size: auto 100%;
+       background-repeat: no-repeat;
+       background-position: center;
 }
 
-body{
-    background-image:  url("images/skyclouds.gif");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-    background-color: black !important;
+#h1-title{
+  font-size: 1.8em;
+  padding: 1%;
+  color: #BFAD61;
+  text-shadow: 0 0 0.3em #000;
 }
+.weather-info-div{
+  color: black;
 
-.main-background-image{
-  width: 90%;
-  margin: 50px auto;
 }
-@media (max-width:640px){
-  .main-background-image{
-    width: 100%;
-  }
+.location-section{
+
+}
+.darkSky-icon{
+
+}
+.weather-summary{
+display: inline-block;
+}
+.temperature-section {
+  display: inline-block;
+}
+.temperature-measurement{
+  display: inline-block;
+}
+.temperature-measurement img {
+  width: 30px;
+  height: 30px;
+}
+.daily-summary{
+
 }
