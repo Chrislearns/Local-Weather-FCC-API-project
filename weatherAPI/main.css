@@ -53,7 +53,8 @@ body {
 .location-section{
 
 }
-.darkSky-icon{
+.darkSky-icon canvas{
+  display: none;
 
 }
 .weather-summary{
@@ -65,10 +66,23 @@ display: inline-block;
 .temperature-measurement{
   display: inline-block;
 }
+.temperature-section-celsius{
+  display: inline-block;
+}
+.temperature-measurement-celsius {
+  display: inline-block;
+}
+.temperature-measurement-celsius img{
+  width: 30px;
+  height: 30px;
+}
+.farenheit-image{
+  border-radius: 100px;
+}
 .temperature-measurement img {
   width: 30px;
   height: 30px;
 }
 .daily-summary{
-
+color: white;
 }
